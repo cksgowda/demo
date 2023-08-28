@@ -1,0 +1,54 @@
+<html>
+<head>
+<script>
+
+function add(){
+var num1,num2,add;
+num1=parseInt(document.getElementById("num1").value);
+num2=parseInt(document.getElementById("num2").value); 
+add=num1+num2;
+document.getElementById("answer").value=add;
+}
+
+function minus(){
+var num1,num2,minus;
+num1=parseInt(document.getElementById("num1").value);
+num2=parseInt(document.getElementById("num2").value); 
+minus=num1-num2;
+document.getElementById("answer").value=minus;
+}
+
+function reset(){
+document.getElementById("num1").value="";
+document.getElementById("num2").value="";
+document.getElementById("answer").value="";
+}
+
+</script>
+<style>
+div{
+    background-color:powderblue;
+    width: fit-content;
+    height: fit-content;
+    border:5px solid black;
+    padding:2px;
+    margin:10px;
+   }
+</style>
+</head>
+<body>
+<center>
+<font color="Red">
+<div>
+<h1>Calculator</h1>
+<p>Enter the first number:<input id="num1"></p>
+<p>Enter the first number:<input id="num2"></p>
+<button onclick="add()">+</button>
+<button onclick="minus()">-</button>
+<button onclick="reset()">c</button>
+<p>Result=<input id="answer"></p>
+</div>
+</font>
+</center>
+</body>
+</html>
